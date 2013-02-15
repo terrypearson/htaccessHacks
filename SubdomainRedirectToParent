@@ -4,6 +4,12 @@
 #Oftentimes this scenario comes in to play when you have an SSL certificate on the parent domain only and do not
 # wish to purchase a separate SSL cert for each subdomain.
 
+Options -MultiViews +FollowSymlinks
+
+RewriteEngine on
+RewriteBase /
+
+
 #Note that HTTP and HTTPS are in separate sections. A clever person could combine these into one using the SERVER_PORT.
 #For simplicity, we have these separated out.
 
